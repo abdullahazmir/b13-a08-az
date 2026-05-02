@@ -1,5 +1,6 @@
 "use client";
 
+import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import {
   Button,
@@ -15,6 +16,18 @@ import {
 export default function SignUpPage() {
   const onSubmit = async (e) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget)
+    const Userdata = Object.fromEntries(formData.entries())
+    console.log('form submitted with', Userdata)
+
+   const { data, error } = await authClient.signUp.email({
+    name: Userdata.name, // required
+    email: Userdata.email, // required
+    password: Userdata.password, // required
+   
+    callbackURL: "/",
+});
+console.log('signup response', data, error);
   };
 
   return (
@@ -24,15 +37,10 @@ export default function SignUpPage() {
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
           <Label>Name</Label>
-          <Input placeholder="Enter your name" />
+          <Input name="name" placeholder="Enter your name" />
           <FieldError />
         </TextField>
 
-        <TextField isRequired name="image" type="text">
-          <Label>Image URL</Label>
-          <Input placeholder="Image URL" />
-          <FieldError />
-        </TextField>
 
         <TextField
           isRequired
@@ -47,7 +55,7 @@ export default function SignUpPage() {
           }}
         >
           <Label>Email</Label>
-          <Input placeholder="john@example.com" />
+          <Input name="email" placeholder="john@example.com" />
           <FieldError />
         </TextField>
 
@@ -71,7 +79,7 @@ export default function SignUpPage() {
           }}
         >
           <Label>Password</Label>
-          <Input placeholder="Enter your password" />
+          <Input name="password" placeholder="Enter your password" />
           <Description>
             Must be at least 8 characters with 1 uppercase and 1 number
           </Description>

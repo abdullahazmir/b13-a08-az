@@ -8,8 +8,8 @@
     "weight": 280,
     "age": 3,
     "location": "Bogura",
-    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
-    "image": "https://i.postimg.cc/example-cow1.jpg",
+    "description": "Healthy deshi cow suitable for Qurbani.",
+    "image": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9",
     "category": "Large Animal"
   },
   {
@@ -21,8 +21,8 @@
     "weight": 350,
     "age": 4,
     "location": "Rajshahi",
-    "description": "High milk-producing cow with excellent health condition.",
-    "image": "https://i.postimg.cc/example-cow2.jpg",
+    "description": "High milk-producing cow.",
+    "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30",
     "category": "Large Animal"
   },
   {
@@ -34,8 +34,8 @@
     "weight": 35,
     "age": 2,
     "location": "Kushtia",
-    "description": "Popular goat breed in Bangladesh, ভালো মাংসের জন্য পরিচিত।",
-    "image": "https://i.postimg.cc/example-goat1.jpg",
+    "description": "Popular goat breed in Bangladesh.",
+    "image": "https://images.unsplash.com/photo-1612197526535-1e0c1a0e6b5e",
     "category": "Small Animal"
   },
   {
@@ -47,8 +47,8 @@
     "weight": 50,
     "age": 3,
     "location": "Pabna",
-    "description": "Large size goat, suitable for Qurbani and breeding.",
-    "image": "https://i.postimg.cc/example-goat2.jpg",
+    "description": "Large size goat.",
+    "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1",
     "category": "Small Animal"
   },
   {
@@ -60,8 +60,8 @@
     "weight": 30,
     "age": 2,
     "location": "Sirajganj",
-    "description": "Healthy sheep raised in গ্রামের পরিবেশ.",
-    "image": "https://i.postimg.cc/example-sheep1.jpg",
+    "description": "Healthy sheep raised locally.",
+    "image": "https://images.unsplash.com/photo-1516467508483-a7212febe31a",
     "category": "Small Animal"
   },
   {
@@ -73,8 +73,8 @@
     "weight": 45,
     "age": 3,
     "location": "Dhaka",
-    "description": "Imported sheep known for fine wool and quality meat.",
-    "image": "https://i.postimg.cc/example-sheep2.jpg",
+    "description": "Imported sheep with fine wool.",
+    "image": "https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8",
     "category": "Small Animal"
   },
   {
@@ -86,8 +86,8 @@
     "weight": 320,
     "age": 4,
     "location": "Mymensingh",
-    "description": "Strong and বড় আকারের গরু, Qurbani জন্য উপযুক্ত।",
-    "image": "https://i.postimg.cc/example-bull1.jpg",
+    "description": "Strong bull for Qurbani.",
+    "image": "https://images.unsplash.com/photo-1546182990-dffeafbe841d",
     "category": "Large Animal"
   },
   {
@@ -99,8 +99,8 @@
     "weight": 400,
     "age": 5,
     "location": "Chattogram",
-    "description": "Premium dairy breed with high milk production.",
-    "image": "https://i.postimg.cc/example-cow3.jpg",
+    "description": "Premium dairy breed.",
+    "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
     "category": "Large Animal"
   },
   {
@@ -112,8 +112,8 @@
     "weight": 2,
     "age": 1,
     "location": "Comilla",
-    "description": "Free-range দেশি মুরগি with natural feeding.",
-    "image": "https://i.postimg.cc/example-chicken1.jpg",
+    "description": "Free-range chicken.",
+    "image": "https://images.unsplash.com/photo-1589927986089-35812388d1f4",
     "category": "Poultry"
   },
   {
@@ -125,8 +125,8 @@
     "weight": 2.5,
     "age": 1,
     "location": "Gazipur",
-    "description": "Fast-growing chicken suitable for commercial use.",
-    "image": "https://i.postimg.cc/example-chicken2.jpg",
+    "description": "Commercial broiler chicken.",
+    "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d",
     "category": "Poultry"
   }
 ]

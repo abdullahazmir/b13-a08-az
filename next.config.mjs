@@ -4,8 +4,13 @@ const nextConfig = {
   reactCompiler: true,
    images: {
     remotePatterns: [
+     {
+        protocol: 'https',
+        hostname: 'bdbusinessfinder.com',
+      },
       {
-        hostname: 'bdbusinessfinder.com'
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
       }
     ]
   }
@@ -14,3 +19,4 @@ const nextConfig = {
 export default nextConfig;
 
 // https://bdbusinessfinder.com/wp-content/uploads/2023/06/11-32.jpg
+// images.unsplash.com

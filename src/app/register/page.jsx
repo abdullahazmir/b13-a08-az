@@ -1,5 +1,4 @@
 "use client";
-
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import {
@@ -12,22 +11,34 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import { useRouter } from "next/navigation";
 
-export default function SignUpPage() {
+export default function registerPage() {
+
+    const router = useRouter()
+
   const onSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget)
-    const Userdata = Object.fromEntries(formData.entries())
-    console.log('form submitted with', Userdata)
 
-   const { data, error } = await authClient.signUp.email({
-    name: Userdata.name, // required
-    email: Userdata.email, // required
-    password: Userdata.password, // required
-   
-    callbackURL: "/",
-});
-console.log('signup response', data, error);
+    const name = e.target.name.value;
+    const image = e.target.image.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    const {data, error} = await authClient.signUp.email({
+        name,
+        email,
+        password,
+        image,
+    })
+    
+
+    console.log({data, error})
+
+    if(!error) {
+        router.push('/')
+    }
+
   };
 
   return (
@@ -37,10 +48,15 @@ console.log('signup response', data, error);
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
           <Label>Name</Label>
-          <Input name="name" placeholder="Enter your name" />
+          <Input placeholder="Enter your name" />
           <FieldError />
         </TextField>
 
+        <TextField isRequired name="image" type="text">
+          <Label>Image URL</Label>
+          <Input placeholder="Image URL" />
+          <FieldError />
+        </TextField>
 
         <TextField
           isRequired
@@ -55,7 +71,7 @@ console.log('signup response', data, error);
           }}
         >
           <Label>Email</Label>
-          <Input name="email" placeholder="john@example.com" />
+          <Input placeholder="john@example.com" />
           <FieldError />
         </TextField>
 
@@ -79,7 +95,7 @@ console.log('signup response', data, error);
           }}
         >
           <Label>Password</Label>
-          <Input name="password" placeholder="Enter your password" />
+          <Input placeholder="Enter your password" />
           <Description>
             Must be at least 8 characters with 1 uppercase and 1 number
           </Description>
@@ -96,6 +112,8 @@ console.log('signup response', data, error);
           </Button>
         </div>
       </Form>
+
+
     </Card>
   );
 }

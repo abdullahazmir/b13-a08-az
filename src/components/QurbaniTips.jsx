@@ -21,7 +21,7 @@ const QurbaniTips = () => {
 
         <div className="p-5 border rounded-lg shadow animate__animated animate__fadeInUp animate__delay-2s">
           <h3 className="font-semibold text-lg mb-2">Proper Feeding</h3>
-          <p>Animals should be well-fed with natural and safe খাবার.</p>
+          <p>Animals should be well-fed with natural and safe feed.</p>
         </div>
       </div>
     </div>

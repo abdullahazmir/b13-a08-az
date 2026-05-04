@@ -10,7 +10,7 @@ const AllAnimalsPage = async() => {
 //   cache: "no-store",
 // });
 // const animals = await res.json();
-    const res = await fetch('http://localhost:3000/data.json', {
+    const res = await fetch('https://b13-a08-az.vercel.app/data.json', {
         cache: 'no-store'
     })
     // const res = await fetch('https://b13-a08-az2.vercel.app/data.json', {

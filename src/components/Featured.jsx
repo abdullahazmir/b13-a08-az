@@ -2,7 +2,7 @@ import React from 'react';
 import AnimalCard from './AnimalCard';
 
 const Featured = async() => {
-    const res = await fetch('https://b13-a08-az2.vercel.app/data.json')
+    const res = await fetch('https://b13-a08-az.vercel.app/data.json')
     const animals = await res.json()
     const featured = animals.slice(0, 6)
     console.log(featured)

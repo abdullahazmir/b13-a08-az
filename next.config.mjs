@@ -11,7 +11,24 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.bssnews.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.bdstall.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.bssnews.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.bssnews.net',
+      },
+
     ]
   }
 };

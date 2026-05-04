@@ -22,11 +22,39 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'www.bssnews.net',
+        hostname: 'www.australiaslivestockexporters.com',
       },
       {
         protocol: 'https',
-        hostname: 'www.bssnews.net',
+        hostname: 'www.entomoljournal.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cpimg.tistatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.bdstall.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'docs.krishnayangauraksha.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cpimg.tistatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.vetextension.com',
       },
 
     ]

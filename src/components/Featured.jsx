@@ -8,7 +8,7 @@ const Featured = async() => {
     console.log(featured)
     return (
          <div>
-            <h1 className="text-2xl font-bold my-5">Top Generations</h1>
+            <h1 className="text-2xl text-center font-bold my-5">Top Animals</h1>
 
             <div className="grid grid-cols-4 gap-5">
                 {featured.map(animal => <AnimalCard key={animal.id} animal={animal} />)}

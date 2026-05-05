@@ -13,9 +13,10 @@ import {
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
 
+
 export default function registerPage() {
 
-    const router = useRouter()
+    const router = useRouter();
 
   const onSubmit = async (e) => {
     e.preventDefault();

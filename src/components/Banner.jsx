@@ -21,11 +21,11 @@ const Banner = () => {
               </Button>
             </Link>
 
-            <Link>
+         
               <Button variant="outline" className="text-white">
                 View Pricing
               </Button>
-            </Link>
+          
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ import {
 import { useRouter } from "next/navigation";
 
 
-export default function registerPage() {
+export default function RegisterPage() {
 
     const router = useRouter();
 

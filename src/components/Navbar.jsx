@@ -25,7 +25,7 @@ const Navbar = () => {
             width={30}
             height={30}
           />
-          <h3 className="font-black text-lg">QURBANI HAT</h3>
+          <h3 className="font-black text-lg">QURBANI HAT 1</h3>
         </div>
 
         {/* Menu */}
